@@ -1,0 +1,19 @@
+package test.first;
+
+import org.testng.annotations.Test;
+
+import com.thoughtworks.selenium.SeleneseTestNgHelper;
+
+@Test
+public class sample extends SeleneseTestNgHelper {
+	@SuppressWarnings("deprecation")
+	public void testSample() throws Exception {
+		selenium.open("/svn/trunk/docs/api/java/index.html");
+		selenium.selectFrame("packageFrame");
+		selenium.click("link=AddBrowserConnection");
+		selenium.click("link=AddDatabaseStorage");
+		selenium.click("link=AddFindsByCss");
+		selenium.click("link=AddFindsChildByCss");
+		selenium.click("css=i");
+	}
+}

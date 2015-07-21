@@ -1,0 +1,14 @@
+package com.example.tests;
+
+import com.thoughtworks.selenium.*;
+import org.testng.annotations.*;
+import static org.testng.Assert.*;
+import java.util.regex.Pattern;
+
+public class GmailLink extends SeleneseTestNgHelper {
+	@Test public void testGmailLink() throws Exception {
+		selenium.open("https://www.google.co.in");
+		selenium.click("class=gb_ua");
+		selenium.waitForPageToLoad("30000");
+	}
+}

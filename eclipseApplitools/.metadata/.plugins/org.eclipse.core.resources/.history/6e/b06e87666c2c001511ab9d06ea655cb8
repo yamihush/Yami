@@ -1,0 +1,16 @@
+
+
+import com.thoughtworks.selenium.*;
+import org.testng.annotations.*;
+import static org.testng.Assert.*;
+import java.util.regex.Pattern;
+
+@Test
+public class Gmiallink extends SeleneseTestNgHelper {
+	@SuppressWarnings("deprecation")
+	public void testGmiallink() throws Exception {
+		selenium.open("https://www.google.co.in");
+		selenium.click("class=gb_ua");
+		selenium.waitForPageToLoad("50000");
+	}
+}
