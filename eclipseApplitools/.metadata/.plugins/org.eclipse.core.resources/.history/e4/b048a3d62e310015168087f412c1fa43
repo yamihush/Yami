@@ -1,0 +1,102 @@
+package automation;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class Login {
+	 public WebDriver driver;
+	
+	@BeforeTest
+  public void seleniumdrver(){
+		   
+		  driver = new FirefoxDriver();
+	      driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 
+	      //Launch the ITO
+	 
+	      driver.get("https://qa1.walker.intuit.com/login/#/signin");	
+		
+	  
+  }
+	
+	@Test
+  public void signin() {
+ 
+		//Login https://qa1.walker.intuit.com/login/#/signin
+		//user - tom11@gmail.com
+		//pass - webtax123!
+		
+		driver.findElement(By.id("ius-userid")).sendKeys("tom11@gmail.com");
+		driver.findElement(By.id("ius-password")).sendKeys("webtax123!");
+		driver.findElement(By.id("ius-sign-in-submit-btn")).click();
+		
+
+				
+	}
+	
+	@Test
+	public void testFindElements()throws Exception{
+		
+		
+		
+		
+		String Text = driver.getCurrentUrl();
+		System.out.println(Text);
+		
+		WebElement yourElement = driver.findElement(By.xpath("//td[contains(text(),'TOM Eleven')]");
+		
+		String xpathAttributeValue = yourElement.getAttribute("xpath");
+		System.out.println(xpathAttributeValue);
+		String companyname= "TOM Eleven";
+		List<WebElement> businessTable= driver.findElements(By.xpath("//table/tbody/*"));
+		System.out.println("one finsih");
+		int iRowCount = businessTable.size();
+		System.out.println(iRowCount);
+		
+		}
+		
+		/*for(int i =1; i<10;i++){
+		WebElement tableRows= businessTable.findElement(By.xpath(".//tbody/tr["+i+"]"));
+		String txt = tableRows.getText();
+		 
+		if(txt.contains(companyname)){
+		String percentage = tableRows.findElement(By.xpath(".//a[contains(text(),'"+companyname+"')]/ancestor::td/following-sibling::td[last()]")).getText();
+		System.out.println(percentage);
+		}
+		
+		Iterator<WebElement> itr = businessTable.iterator();
+		while(itr.hasNext()) {
+		   
+			System.out.println(itr.next());
+		 
+			}
+		 
+		}*/
+		 
+		
+ 
+	
+	@BeforeMethod
+  public void beforeMethod() {
+
+  }
+
+  
+	
+	@AfterMethod
+  public void afterMethod() {
+  }
+
+}

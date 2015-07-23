@@ -78,7 +78,7 @@ public class TestNG {
  
       //Launch the Online Store Website
  
-      driver.get("https://login.yahoo.com/");
+      driver.get("https://login.yahoo.com/");	
  
   }
  

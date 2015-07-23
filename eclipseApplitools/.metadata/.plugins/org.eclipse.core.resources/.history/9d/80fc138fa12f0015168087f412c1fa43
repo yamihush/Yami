@@ -1,0 +1,55 @@
+package dayone;
+
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+public class Example2 {
+  
+	 
+	  @BeforeTest
+	  public void beforeTest() {
+		  System.out.println("connecting to DB");
+	  }
+
+	  
+	  @BeforeMethod
+	  public void OpeningBrowser() {
+		  
+		  System.out.println("In OpeningBrowser");
+	  }
+
+	  @AfterMethod
+ public void CloseingBrowser() {
+		  
+		  System.out.println("I CloseingBrowser");
+	  }
+	
+  @Test
+  public void testreceviemail() {
+  
+  // Selenium code to Recevive the email
+	  System.out.println("In Recevice Mail");
+  }
+  
+  @Test
+  public void testsendmail() {
+  
+  // Selenium code to send the email
+	  
+	  System.out.println("In Sent Mail");
+  
+  }
+  
+
+
+  @AfterTest
+  public void AfterTest() {
+	  System.out.println("Closing connection DB");
+  }
+
+ 
+}

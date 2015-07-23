@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNG" verbose="1" parallel="false" thread-count="2"
+    data-provider-thread-count="3">
+
+  <suite-files>
+    <suite-file path="./junit-suite.xml" />
+    <suite-file path="./parent-module-suite.xml" />
+  </suite-files>
+
+  <test name="Nopackage">
+    <groups>
+      <run>
+        <include name="nopackage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="NoPackageTest" />
+    </classes>
+  </test>
+  <test name="@Test(enable)">
+    <classes>
+      <class name="test.enable.EnableTest"/>
+    </classes>
+  </test>
+</suite>
+
+

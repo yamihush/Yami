@@ -1,0 +1,41 @@
+
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+public class Example1 {
+  
+	
+	
+  @Test
+  public void testreceviemail() {
+  
+  // Selenium code to Recevive the email
+	  System.out.println("In Recevice Mail");
+  }
+  
+  @Test
+  public void testsendmail() {
+  
+  // Selenium code to send the email
+	  
+	  System.out.println("In Sent Mail");
+  
+  }
+  
+  
+  @BeforeMethod
+  public void beforeMethod() {
+	  
+	  System.out.println("In Before Method");
+  }
+
+  
+  
+  @BeforeTest
+  public void beforeTest() {
+	  System.out.println("In Before Test");
+  }
+
+}

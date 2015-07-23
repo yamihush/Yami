@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DayOneTestNG]">
+  <test name="Yahoo ---- Value --- Test(failed)">
+    <classes>
+      <class name="dayone.Yahoo">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="CloseingBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="OpeningBrowser"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- dayone.Yahoo -->
+      <class name="dayone.ValuesPassing">
+        <methods>
+          <include name="f" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- dayone.ValuesPassing -->
+      <class name="dayone.Gmail">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- dayone.Gmail -->
+    </classes>
+  </test> <!-- Yahoo - Value - Test(failed) -->
+</suite> <!-- Failed suite [DayOneTestNG] -->

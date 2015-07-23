@@ -1,0 +1,55 @@
+package automation;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class Login {
+	 public WebDriver driver;
+	
+	@BeforeTest
+  public void seleniumdrver(){
+		   
+	  
+	  
+  }
+	
+	@Test
+  public void signin() {
+ 
+		//Login https://qa1.walker.intuit.com/login/#/signin
+		//user - tom11@gmail.com
+		//pass - webtax123!
+		
+		driver.findElement((By.id("ius-userid"))).sendKeys("tom11@gmail.com");
+		
+	
+	}
+ 
+	
+	@BeforeMethod
+  public void beforeMethod() {
+
+	      driver = new FirefoxDriver();
+	      driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	 
+	      //Launch the ITO
+	 
+	      driver.get("https://qa1.walker.intuit.com/login/#/signin");	
+		
+  }
+
+  
+	
+	@AfterMethod
+  public void afterMethod() {
+  }
+
+}

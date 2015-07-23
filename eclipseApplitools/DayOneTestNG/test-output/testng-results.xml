@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DayOneTestNG" duration-ms="363" started-at="2015-07-22T18:36:24Z" finished-at="2015-07-22T18:36:24Z">
+    <groups>
+    </groups>
+    <test name="Gmail Test" duration-ms="27" started-at="2015-07-22T18:36:24Z" finished-at="2015-07-22T18:36:24Z">
+      <class name="dayone.Gmail">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:dayone.Gmail@3963542c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testreceviemail()[pri:0, instance:dayone.Gmail@3963542c]" name="testreceviemail" duration-ms="6" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testreceviemail -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:dayone.Gmail@3963542c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:dayone.Gmail@3963542c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testsendmail()[pri:0, instance:dayone.Gmail@3963542c]" name="testsendmail" duration-ms="7" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsendmail -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:dayone.Gmail@3963542c]" name="AfterTest" is-config="true" duration-ms="1" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- dayone.Gmail -->
+    </test> <!-- Gmail Test -->
+    <test name="Yahoo Test" duration-ms="7" started-at="2015-07-22T18:36:24Z" finished-at="2015-07-22T18:36:24Z">
+      <class name="dayone.Yahoo">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="beforeTest" is-config="true" duration-ms="1" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="OpeningBrowser()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="OpeningBrowser" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpeningBrowser -->
+        <test-method status="PASS" signature="testreceviemail()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="testreceviemail" duration-ms="1" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testreceviemail -->
+        <test-method status="PASS" signature="testsendmail()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="testsendmail" duration-ms="2" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsendmail -->
+        <test-method status="PASS" signature="OpeningBrowser()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="OpeningBrowser" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpeningBrowser -->
+        <test-method status="PASS" signature="CloseingBrowser()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="CloseingBrowser" is-config="true" duration-ms="1" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseingBrowser -->
+        <test-method status="PASS" signature="CloseingBrowser()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="CloseingBrowser" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseingBrowser -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="AfterTest" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- dayone.Yahoo -->
+    </test> <!-- Yahoo Test -->
+    <test name="Yahoo ---- Value --- Test" duration-ms="11" started-at="2015-07-22T18:36:24Z" finished-at="2015-07-22T18:36:24Z">
+      <class name="dayone.ValuesPassing">
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:dayone.ValuesPassing@4dee4aae]" name="f" duration-ms="4" started-at="2015-07-23T00:06:24Z" data-provider="usernameprovider" finished-at="2015-07-23T00:06:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yamihush]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9944426760]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:dayone.ValuesPassing@4dee4aae]" name="f" duration-ms="2" started-at="2015-07-23T00:06:24Z" data-provider="usernameprovider" finished-at="2015-07-23T00:06:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yamihush@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9944426760]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- dayone.ValuesPassing -->
+      <class name="dayone.Yahoo">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:dayone.Yahoo@6bf15d27]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2015-07-23T00:06:24Z" finished-at="2015-07-23T00:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- dayone.Yahoo -->
+    </test> <!-- Yahoo - Value - Test -->
+  </suite> <!-- DayOneTestNG -->
+</testng-results>

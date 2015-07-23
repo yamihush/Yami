@@ -1,0 +1,61 @@
+package dayone;
+
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+public class yahoo {
+	@BeforeSuite
+	  public void beforeSuite() {
+		  System.out.println("Intialize Selenium ");
+	  }
+	 
+	  @BeforeTest
+	  public void beforeTest() {
+		  System.out.println("connecting to DB from Yahoo");
+	  }
+
+	  
+	  @BeforeMethod
+	  public void OpeningBrowser() {
+		  
+		  System.out.println("In OpeningBrowser from Yahoo");
+	  }
+
+	  @AfterMethod
+ public void CloseingBrowser() {
+		  
+		  System.out.println("I CloseingBrowser from Yahoo");
+	  }
+	
+  @Test
+  public void testreceviemail() {
+  
+  // Selenium code to Recevive the email
+	  System.out.println("In Recevice Mail from Yahoo");
+  }
+  
+  @Test
+  public void testsendmail() {
+  
+  // Selenium code to send the email
+	   
+	  System.out.println("In Sent Mail from Yahoo");
+  
+  }
+  
+  @AfterTest
+  public void AfterTest() {
+	  System.out.println("Closing connection DB from Yahoo");
+  }
+
+  @AfterSuite
+  public void AfterSuite() {
+	  System.out.println("Destroy Selenium After Suite ");
+  }
+}
